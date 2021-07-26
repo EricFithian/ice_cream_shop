@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>My Shop's Ice Cream Options</h1>
+{% for option in options %}
+    <div class="card">
+        <h3>{{options.flavor}}</h3>
+        <p>{{option.scoops}}</p>
+        <p>{{option.price}}</p>
+        <p>{{option.description}}</p>
+    </div>
+{% endfor %}
+{% endblock %}
